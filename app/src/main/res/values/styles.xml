@@ -1,10 +1,10 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorRedNormal</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
@@ -14,10 +14,58 @@
         <item name="android:fontFamily">@font/montserrat_bold</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">15sp</item>
     </style>
 
+    <!-- Text Didalam Button-->
     <style name="Button.Start">
         <item name="android:text">@string/get_started</item>
     </style>
+
+    <style name="Button.Login">
+        <item name="android:text">@string/login</item>
+    </style>
+
+    <!-- Style Untuk TextView-->
+    <style name="TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="TextView.Red" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/colorRedNormal</item>
+    </style>
+
+    <style name="TextView.Large">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <!-- Style EditText-->
+    <style name="EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/bg_edit</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorGreyEdt</item>
+        <item name="android:drawablePadding">20dp</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="EditText.Username">
+        <item name="android:drawableStart">@drawable/ic_user</item>
+        <item name="android:inputType">text</item>
+        <item name="android:hint">Username</item>
+    </style>
+
+    <style name="EditText.Password">
+        <item name="android:drawableStart">@drawable/ic_lock</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:hint">Password</item>
+    </style>
+
+
 
 </resources>
