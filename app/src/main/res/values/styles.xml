@@ -8,4 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Style Untuk Button-->
+    <style name="Button" parent="TextAppearance.AppCompat.Button">
+        <item name="android:background">@drawable/shape_rectangle_button_primary</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Button.Start">
+        <item name="android:text">@string/get_started</item>
+    </style>
+
 </resources>
