@@ -26,6 +26,10 @@
         <item name="android:text">@string/login</item>
     </style>
 
+    <style name="Button.Signup">
+        <item name="android:text">@string/sign_up</item>
+    </style>
+
     <!-- Style Untuk TextView-->
     <style name="TextView" parent="Widget.AppCompat.TextView">
         <item name="android:fontFamily">@font/montserrat</item>
@@ -55,13 +59,19 @@
     </style>
 
     <style name="EditText.Username">
-        <item name="android:drawableStart">@drawable/ic_user</item>
+        <item name="android:drawableStart">@drawable/ic_user_black_24dp</item>
         <item name="android:inputType">text</item>
         <item name="android:hint">Username</item>
     </style>
 
+    <style name="EditText.Email">
+        <item name="android:drawableStart">@drawable/ic_email_black_24dp</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:hint">Email</item>
+    </style>
+
     <style name="EditText.Password">
-        <item name="android:drawableStart">@drawable/ic_lock</item>
+        <item name="android:drawableStart">@drawable/ic_lock_black_24dp</item>
         <item name="android:inputType">textPassword</item>
         <item name="android:hint">Password</item>
     </style>
