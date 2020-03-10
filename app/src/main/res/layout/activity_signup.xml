@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="50dp"
         android:text="Create Account"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -29,7 +29,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:orientation="vertical"
         android:paddingLeft="24dp"
         android:paddingRight="24dp"
@@ -57,7 +57,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 style="@style/EditText.Email"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -89,12 +89,12 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <LinearLayout
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -102,18 +102,18 @@
 
         <TextView
             android:id="@+id/textView3"
+            style="@style/TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/dont_have_an_account"
             android:paddingRight="5dp"
-            style="@style/TextView" />
+            android:text="@string/dont_have_an_account" />
 
         <TextView
             android:id="@+id/textView4"
+            style="@style/TextView.Red"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sign_in"
-            style="@style/TextView.Red" />
+            android:text="@string/sign_in" />
 
     </LinearLayout>
 
