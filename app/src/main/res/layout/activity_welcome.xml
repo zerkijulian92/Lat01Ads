@@ -19,11 +19,11 @@
         app:srcCompat="@drawable/ic_icon_apps" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_getstarted"
         style="@style/Button.Start"
         android:layout_width="132dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="40dp"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -79,7 +79,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_signup"
         style="@style/Button.Signup"
         android:layout_width="109dp"
         android:layout_height="40dp"
@@ -109,7 +109,7 @@
             android:text="@string/dont_have_an_account" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tv_singin"
             style="@style/TextView.Red"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
