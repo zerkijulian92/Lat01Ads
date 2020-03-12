@@ -13,14 +13,29 @@ class SignupActivity : AppCompatActivity() {
 
         // berpindah activity
         btn_signup.setOnClickListener {
-            finish()
-            startActivity(Intent(this, HomeActivity::class.java))
+            back()
+//            finish()
+//            startActivity(Intent(this, HomeActivity::class.java))
         }
 
         // berpindah activity
         tv_singin.setOnClickListener {
-            finish()
-            startActivity(Intent(this, SigninActivity::class.java))
+            back()
+//            finish()
+//            startActivity(Intent(this, SigninActivity::class.java))
         }
+    }
+
+    // Fungsi Button Back yang ada di smartphone
+    override fun onBackPressed() {
+        back()
+    }
+
+    // Membuat sebuah function untuk back
+    // Catt: karena kita membuat function back()
+    // maka fungsi Intent kita nonaktifkan
+    private fun back() {
+        finish()
+        overridePendingTransition(R.anim.no_animation, R.anim.slide_out)
     }
 }

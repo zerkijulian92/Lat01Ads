@@ -13,15 +13,24 @@ class SigninActivity : AppCompatActivity() {
 
         // berpindah activity
         btn_signup.setOnClickListener {
-            finish()
+//            finish()
             startActivity(Intent(this, HomeActivity::class.java))
+            // Memasukan animasi transisi
+            overridePendingTransition(R.anim.slide_in, R.anim.slide_out)
         }
 
         // berpindah activity
         tv_singin.setOnClickListener {
-            finish()
+//            finish()
             startActivity(Intent(this, SignupActivity::class.java))
+            // Memasukan animasi transisi
+            overridePendingTransition(R.anim.slide_in, R.anim.slide_out)
 
         }
+    }
+
+    // Fungsi Button Back yang ada di smartphone
+    override fun onBackPressed() {
+        finish()
     }
 }

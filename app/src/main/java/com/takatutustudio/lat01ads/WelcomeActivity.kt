@@ -1,8 +1,9 @@
 package com.takatutustudio.lat01ads
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_welcome.*
 
 class WelcomeActivity : AppCompatActivity() {
@@ -15,6 +16,8 @@ class WelcomeActivity : AppCompatActivity() {
         btn_getstarted.setOnClickListener {
             finish()
             startActivity(Intent(this, SigninActivity::class.java))
+            // Memasukan animasi transisi
+            overridePendingTransition(R.anim.slide_in,  R.anim.slide_out)
         }
     }
 }
